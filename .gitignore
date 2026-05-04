@@ -18,6 +18,7 @@ build/
 out/
 tsconfig.tsbuildinfo
 *.log
+dev-server*.log
 logs/
 
 # IDE & OS (AIOX)

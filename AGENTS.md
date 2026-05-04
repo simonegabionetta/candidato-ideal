@@ -16,6 +16,7 @@ Este arquivo define as instrucoes do projeto para o Codex CLI.
 - A cada troca de agente ou nova fase, recomende limpar a janela de contexto e iniciar uma nova sessao depois que o handoff estiver salvo.
 - Mantenha a janela de contexto baixa: nao carregue arquivos grandes sem necessidade e prefira resumos objetivos.
 - Ao concluir cada fase ou user story, fazer commit no repositorio do usuario antes do handoff, seguindo Conventional Commits em ingles no prefixo e mensagem objetiva em portugues quando fizer sentido. Exemplos: `feat: adiciona setup inicial do projeto`, `docs: cria brief do produto`, `chore: atualiza regras de handoff`.
+- Ao concluir cada fase ou user story, sempre executar testes e validacoes adequadas ao que foi alterado antes de marcar como concluido. Registrar no arquivo da story e no handoff quais comandos foram executados, quais passaram, quais falharam e qualquer excecao de ambiente.
 
 <!-- AIOX-MANAGED-START: core -->
 ## Core Rules
