@@ -119,6 +119,78 @@ button:hover {
   background: var(--accent-strong);
 }
 
+button:disabled {
+  cursor: progress;
+  opacity: 0.72;
+}
+
+.statusPanel,
+.resultPanel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-top: 24px;
+  padding: 20px;
+}
+
+.errorPanel {
+  border-color: #b84d4d;
+}
+
+.resultHeader {
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.decisionBadge {
+  border-radius: 8px;
+  color: white;
+  display: inline-block;
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 10px;
+}
+
+.decisionBadge.apply {
+  background: var(--accent);
+}
+
+.decisionBadge.do_not_apply {
+  background: #8f3d3d;
+}
+
+.justification {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.resultGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.resultGrid article {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.resultGrid h3 {
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+
+.resultGrid ul {
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 18px;
+}
+
 .phaseList {
   display: grid;
   gap: 14px;
@@ -140,6 +212,18 @@ button:hover {
   font-size: 13px;
   font-weight: 700;
   margin-bottom: 10px;
+}
+
+.phaseCard.blocked {
+  opacity: 0.58;
+}
+
+.phaseCard.completed {
+  border-color: var(--accent);
+}
+
+.phaseCard.active {
+  box-shadow: inset 0 0 0 1px var(--accent);
 }
 
 .phaseCard p,
@@ -165,5 +249,14 @@ button:hover {
 
   .phaseList {
     grid-template-columns: 1fr;
+  }
+
+  .resultHeader,
+  .resultGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .resultHeader {
+    display: grid;
   }
 }
