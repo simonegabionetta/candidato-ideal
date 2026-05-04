@@ -14,6 +14,7 @@ Este arquivo define as instrucoes do projeto para o Codex CLI.
 - Antes de trocar de agente, avise o usuario de forma simples qual agente deve assumir e por que.
 - Antes de encerrar uma fase ou trocar de agente, gere um handoff em portugues para o proximo agente com contexto, arquivos alterados, decisoes tomadas, pendencias e proximo comando sugerido.
 - A cada troca de agente ou nova fase, recomende limpar a janela de contexto e iniciar uma nova sessao depois que o handoff estiver salvo.
+- Sempre avise explicitamente o usuario quando for hora de limpar a janela de contexto, antes de trocar de agente ou iniciar nova fase.
 - Mantenha a janela de contexto baixa: nao carregue arquivos grandes sem necessidade e prefira resumos objetivos.
 - Ao concluir cada fase ou user story, fazer commit no repositorio do usuario antes do handoff, seguindo Conventional Commits em ingles no prefixo e mensagem objetiva em portugues quando fizer sentido. Exemplos: `feat: adiciona setup inicial do projeto`, `docs: cria brief do produto`, `chore: atualiza regras de handoff`.
 - Ao concluir cada fase ou user story, sempre executar testes e validacoes adequadas ao que foi alterado antes de marcar como concluido. Registrar no arquivo da story e no handoff quais comandos foram executados, quais passaram, quais falharam e qualquer excecao de ambiente.
